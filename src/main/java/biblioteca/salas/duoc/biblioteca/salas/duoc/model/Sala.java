@@ -1,0 +1,23 @@
+package biblioteca.salas.duoc.biblioteca.salas.duoc.model;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "sala")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Sala {
+    @Id
+    private int codigo:
+    private String nombre:
+    private int capacidad;
+    private int idInstituto;
+
+    @ManyToOne
+    @JoinColumn(name = "id_tipo", nullable = false)
+    private TipoSala tipoSala;
+}
