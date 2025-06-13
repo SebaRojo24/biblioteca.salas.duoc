@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Sala {
     @Id
-    private int codigo:
-    private String nombre:
+    private int codigo;
+    private String nombre;
     private int capacidad;
     private int idInstituto;
 
